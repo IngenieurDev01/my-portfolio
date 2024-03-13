@@ -11346,7 +11346,7 @@ pre {
   min-height: 80px;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
-  background: #fff;
+  background: var(--blue);
 }
 
 .navbar .navbar-brand img {
@@ -11368,7 +11368,7 @@ pre {
 }
 
 .navbar .navbar-nav .nav-link.active {
-  color: #ff7a57;
+  color: red !important;
 }
 
 .navbar .navbar-nav .btn {
