@@ -11,6 +11,36 @@
 
 * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 */
+
+.hr {
+  /* centre verticalement les enfants entre eux */
+  align-items: center;
+
+  /* active flexbox */
+  display: flex;
+
+  /* garde le texte centré s’il passe sur plusieurs lignes ou si flexbox n’est pas supporté */
+  text-align: center;
+}
+
+.hr::before,
+.hr::after {
+  /* remplir le fond du trait permet également d’utiliser des images ou dégradés ! */
+  background: currentColor;
+
+  /* nécessaire pour afficher les pseudo-éléments */
+  content: "";
+
+  /* partage le reste de la largeur disponible */
+  flex: 1;
+
+  /* l’unité « em » garantit un ratio constant avec la taille du texte */
+  height: .025em;
+
+  /* espace les traits du texte */
+  margin: 0 .5em;
+}
+
 :root {
   --blue: #79A9F5;
   --indigo: #C45F90;
